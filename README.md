@@ -2,6 +2,7 @@
 ## Prerequisite
 
 - Python 3
+- Docker & docker-compose
 
 ### Install requirements
 
@@ -17,6 +18,29 @@ virtualenv env
 pip install -r requirements.txt
 ```
 
+## Task 1 Solution
+
+How to run:
+```
+cd soal1
+```
+
+```
+mkdir ./dags ./data ./logs ./plugins
+```
+
+```
+echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
+```
+
+```
+docker-compose up airflow-init
+```
+
+```
+docker-compose up
+```
+
 ## Task 2 Solution
 
 Asumsi:
@@ -30,6 +54,7 @@ python soal2.py
 
 ## Task 3 Solution
 
+How to run:
 ```
 python soal3.py
 ```
