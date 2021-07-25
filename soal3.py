@@ -32,5 +32,4 @@ max_price = new_df.groupby(['week', 'komoditas']).max()
 aggregated_df['min_price'] = min_price
 aggregated_df['max_price'] = max_price
 
-aggregated_df.to_csv('aggregated_df.csv')
-
+aggregated_df.to_csv('task3_output.csv')
